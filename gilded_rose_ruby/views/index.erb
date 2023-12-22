@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gilded Rose Inventory</title>
+</head>
+<body>
+  <h1>Gilded Rose Inventory</h1>
+  <ul>
+    <% items.each do |item| %>
+      <li><%= "#{item.name}, SellIn: #{item.sell_in}, Quality: #{item.quality}" %></li>
+    <% end %>
+  </ul>
+</body>
+</html>
